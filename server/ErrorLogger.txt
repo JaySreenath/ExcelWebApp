@@ -1,0 +1,11 @@
+Error: Could not connect to Database
+    at E:\project\server\utilities\connection.js:20:19
+Error: Could not connect to Database
+    at E:\project\server\utilities\connection.js:20:19
+Error: Could not connect to Database
+    at E:\project\server\utilities\connection.js:20:19
+ValidationError: Surgery validation failed: theatre: `1` is not a valid enum value for path `theatre`.
+    at model.Document.invalidate (E:\project\server\node_modules\mongoose\lib\document.js:2757:32)
+    at E:\project\server\node_modules\mongoose\lib\document.js:2549:17
+    at E:\project\server\node_modules\mongoose\lib\schematype.js:1273:9
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
