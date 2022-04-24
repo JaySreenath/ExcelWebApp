@@ -1,11 +1,11 @@
 class Surgery{
     constructor(obj){
-        this.name = obj.name,
-        this.surgeon = obj.surgeon,
-        this.anaesthetist = obj.anaesthetist,
-        this.theatre = obj.theatre,
-        this.start = obj.start,
-        this.end = obj.end
+        this.ename = obj.ename,
+        this.snumber = obj.snumber,
+        this.mnumber = obj.mnumber,
+        this.productionValue = obj.productionValue,
+        this.meter = obj.meter,
+        this.Todaydate = obj.Todaydate
     }
 }
 module.exports=Surgery;

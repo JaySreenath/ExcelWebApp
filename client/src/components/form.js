@@ -4,9 +4,9 @@ import {backendUrlSurgery} from '../BackendURL';
 
 const Form = () => {
 
-    const[values,setValues] = useState({name:"", surgeon:"", anaesthetist:"", theatre:"", start:"", end:""});
-    const[errors,setErrors] = useState({name:"", surgeon:"", anaesthetist:"", theatre:"", start:"", end:""});
-    const[valid,setValid] = useState({name:"", surgeon:"", anaesthetist:"", theatre:"", start:"", end:""});
+    const[values,setValues] = useState({ename:"", snumber:"", mnumber:"", productionValue:"", meter:"", Todaydate:""});
+    const[errors,setErrors] = useState({ename:"", snumber:"", mnumber:"", productionValue:"", meter:"", Todaydate:""});
+    const[valid,setValid] = useState({ename:"", snumber:"", mnumber:"", productionValue:"", meter:"", Todaydate:""});
 
     const handleChange = (e) => {
         const { target } = e;
@@ -55,76 +55,76 @@ const Form = () => {
                         <h1>Day Production</h1>
                         <form className="form" onSubmit={handleSubmit} > 
                             <div className="form-group mt-3 mb-3" >
-                                <label htmlFor="name">Employee Name<span className="text-danger">*</span></label>
+                                <label htmlFor="ename">Employee Name<span className="text-danger">*</span></label>
                                 <input
                                     type="text"
                                     placeholder="Please enter the field"
-                                    value={values.name}
+                                    value={values.ename}
                                     onChange={handleChange}
-                                    id="name"
-                                    name="name"
+                                    id="ename"
+                                    name="ename"
                                     className="form-control"
                                 />
                             </div>
-                            {errors.name ? (<span className="text-danger">{errors.name}</span>): null}
+                            {errors.ename ? (<span className="text-danger">{errors.name}</span>): null}
                             <div className="form-group mt-3 mb-3 ">
-                                <label htmlFor="surgeon">Serial Number<span className="text-danger">*</span></label>
+                                <label htmlFor="snumber">Serial Number<span className="text-danger">*</span></label>
                                 <input
                                     type="number"
                                     placeholder="Please enter the S.NO"
-                                    value={values.surgeon}
+                                    value={values.snumber}
                                     onChange={handleChange}
-                                    id="surgeon"
-                                    name="surgeon"
+                                    id="snumber"
+                                    name="snumber"
                                     className="form-control"
                                 />
                             </div>
-                            {errors.surgeon ? (<span className="text-danger">{errors.surgeon}</span>): null}
+                            {errors.mnumber ? (<span className="text-danger">{errors.surgeon}</span>): null}
                             <div className="form-group mt-3 mb-3 ">
-                                <label htmlFor="anaesthetist">Machine Number<span className="text-danger">*</span></label>
+                                <label htmlFor="mnumber">Machine Number<span className="text-danger">*</span></label>
                                 <input
                                     type="number"
                                     placeholder="Please enter the machine number"
-                                    value={values.anaesthetist}
+                                    value={values.mnumber}
                                     onChange={handleChange}
-                                    id="anaesthetist"
-                                    name="anaesthetist"
+                                    id="mnumber"
+                                    name="mnumber"
                                     className="form-control"
                                 />
                             </div>
-                            {errors.anaesthetist ? (<span className="text-danger">{errors.anaesthetist}</span>): null}
+                            {errors.productionValue ? (<span className="text-danger">{errors.anaesthetist}</span>): null}
                             <div className="form-group mt-3 mb-3 ">
-                                <label htmlFor="theatre">Production Value<span className="text-danger">*</span></label>
+                                <label htmlFor="productionValue">Production Value<span className="text-danger">*</span></label>
                                 <input
                                     type="number"
                                     placeholder="Please enter the production value"
-                                    value={values.theatre}
+                                    value={values.productionValue}
                                     onChange={handleChange}
-                                    id="theatre"
-                                    name="theatre"
+                                    id="productionValue"
+                                    name="productionValue"
                                     className="form-control"
                                 />
                             </div>
                             <div className="form-group mt-3 mb-3 ">
-                                <label htmlFor="theatre">Meter<span className="text-danger">*</span></label>
+                                <label htmlFor="meter">Meter<span className="text-danger">*</span></label>
                                 <input
                                     type="number"
                                     placeholder="Please enter the meter value"
-                                    value={values.theatre}
+                                    value={values.meter}
                                     onChange={handleChange}
-                                    id="theatre"
-                                    name="theatre"
+                                    id="meter"
+                                    name="meter"
                                     className="form-control"
                                 />
                             </div>
                             <div className="form-group mt-3 mb-3 ">
-                                <label htmlFor="start">Today's Date<span className="text-danger">*</span></label>
+                                <label htmlFor="Todaydate">Today's Date<span className="text-danger">*</span></label>
                                 <input
                                     type="date"
-                                    value={values.start}
+                                    value={values.Todaydate}
                                     onChange={handleChange}
-                                    id="start"
-                                    name="start"
+                                    id="Todaydate"
+                                    name="Todaydate"
                                     className="form-control"
                                 />
                             </div>
